@@ -25,7 +25,9 @@ class ProjectRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|min:3|max:255',
+            'title' => 'required|max:255',
+            'cover' => 'mimes:jpg,bmp,png,jpeg,svg',
+            'price' => 'required'
         ];
     }
 
@@ -37,7 +39,9 @@ class ProjectRequest extends FormRequest
     public function attributes()
     {
         return [
-            //
+            'title' => 'заголовок',
+            'cover' => 'обложка',
+            'price' => 'цена'
         ];
     }
 
@@ -49,7 +53,8 @@ class ProjectRequest extends FormRequest
     public function messages()
     {
         return [
-            'title' => 'Заголовок должен содержать от 3 до 150 символов.'
+            //
+
         ];
     }
 }

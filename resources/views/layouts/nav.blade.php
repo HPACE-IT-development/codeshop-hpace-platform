@@ -1,7 +1,7 @@
 <nav>
     <img src="{{Vite::asset('resources/assets/logo_dark.png')}}" alt="logo">
     <div>
-        <a href="">Каталог</a>
+        <a href="{{ route('catalog') }}">Каталог</a>
         <a href="">Контакты</a>
         <a href="">О нас</a>
     </div>

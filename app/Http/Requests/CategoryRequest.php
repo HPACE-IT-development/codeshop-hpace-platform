@@ -25,7 +25,7 @@ class CategoryRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|min:3|max:150'
+            'title' => 'required|max:150'
         ];
     }
 
@@ -34,10 +34,10 @@ class CategoryRequest extends FormRequest
      *
      * @return array
      */
-    public function attributes()
+    public function attributes(): array
     {
         return [
-            //
+            'title' => 'Заголовок'
         ];
     }
 
@@ -46,10 +46,10 @@ class CategoryRequest extends FormRequest
      *
      * @return array
      */
-    public function messages()
+    public function messages(): array
     {
         return [
-            'title' => 'Заголовок должен содержать от 3 до 150 символов.'
+            'required' => 'Заголовок должен содержать максимум 255 символов.'
         ];
     }
 }

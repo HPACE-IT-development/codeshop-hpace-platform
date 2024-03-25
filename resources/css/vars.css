@@ -1,6 +1,13 @@
 :root {
-    --blue-dark: #040a11;
-    --blue-medium:#1b1c3b;
+    --blue-dark: #040B11;
+    --blue-medium: #1b1c3b;
     --blue-light: #78a3f5;
     --font-color-main: #ffffff;
-  }
+
+    --card-bg-color-main: ;
+    --card-bg-color-hover: ;
+    --card-bg-color-active: ;
+
+    --input-bg-color-main: ;
+    --input-bg-color-active: ;
+}
